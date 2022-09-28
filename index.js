@@ -8,7 +8,7 @@ function addMovie(event){
     const movie = document.createElement('li');
     const movieTitle = document.createElement ('span');
     movieTitle.textContent = inputField.value;
-    addEventListener('click',crossOffMovie);
+    movieTitle.addEventListener('click',crossOffMovie);
     movie.appendChild(movieTitle);
     const movieList = document.querySelector('ul');
     movieList.appendChild(movie);
